@@ -25,5 +25,5 @@ CREATE TABLE sightings (
     location VARCHAR(80) NOT NULL,
     notes TEXT,
     FOREIGN KEY (species_id) REFERENCES species(species_id),
-    FOREIGN KEY (ranger_id) REFERENCES species(ranger_id),
+    FOREIGN KEY (ranger_id) REFERENCES rangers(ranger_id)
 )
