@@ -22,11 +22,11 @@
    order_date DATE
    );
 
--- Foreign Key
-CREATE TABLE order_details (
-detail_id SERIAL PRIMARY KEY,
-order_id INT REFERENCES orders(order_id)
-);
+  -- Foreign Key
+  CREATE TABLE order_details (
+  detail_id SERIAL PRIMARY KEY,
+  order_id INT REFERENCES orders(order_id)
+  );
 
 4. How can you modify data using UPDATE statements?
    UPDATE স্টেটমেন্ট দিয়ে টেবিলের ডাটা মডিফাই করা যায়। এটি নির্দিষ্ট কলামের মান আপডেট করে, যেখানে WHERE ক্লজ দিয়ে কোন রো-গুলো আপডেট করতে হবে তা নির্ধারণ করা হয়।
